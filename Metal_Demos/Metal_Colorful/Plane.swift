@@ -18,7 +18,30 @@ struct Vertex {
     var color: float4
 }
 
-class Plane: Node {
+class Plane: Node, Renderable {
+    
+    var pipelineState: MTLRenderPipelineState!
+    
+    var vertexFunctionName: String = "vertex_shader"
+    var fragmentFunctionName: String = "fragment_shader"
+    
+    var vertexDescriptor: MTLVertexDescriptor = {
+        
+        /// 顶点描述
+        let vertexDescriptor = MTLVertexDescriptor()
+        /// 位置
+        vertexDescriptor.attributes[0].format = .float3
+        vertexDescriptor.attributes[0].offset = 0
+        vertexDescriptor.attributes[0].bufferIndex = 0
+        /// 颜色
+        vertexDescriptor.attributes[1].format = .float4
+        vertexDescriptor.attributes[1].offset = MemoryLayout<float3>.stride
+        vertexDescriptor.attributes[1].bufferIndex = 0
+
+        vertexDescriptor.layouts[0].stride = MemoryLayout<Vertex>.stride
+        return vertexDescriptor
+    }()
+    
     // gpu
     private var device: MTLDevice!
     /// 三角形的三个顶点 （对应的四个角位置）
@@ -51,6 +74,7 @@ class Plane: Node {
         super.init()
         self.device = device
         buildVertexBuffer()
+        pipelineState = buildPipelineState(device: device)
     }
     
     // 处理顶点
@@ -69,7 +93,7 @@ class Plane: Node {
 //        time += deltaTime
 //        let animateBy = abs(sin(time)/2 + 0.5)
 //        constants.animateBy = animateBy
-        
+        commandEnder.setRenderPipelineState(pipelineState)
         commandEnder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
 //        commandEnder.setVertexBytes(&constants,
 //                                    length: MemoryLayout<Constants>.stride,
