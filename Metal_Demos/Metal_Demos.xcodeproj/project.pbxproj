@@ -51,6 +51,20 @@
 		C22DA7D221C2A6BD00256576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DA7D021C2A6BD00256576 /* Main.storyboard */; };
 		C22DA7D421C2A6BE00256576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22DA7D321C2A6BE00256576 /* Assets.xcassets */; };
 		C22DA7D721C2A6BE00256576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DA7D521C2A6BE00256576 /* LaunchScreen.storyboard */; };
+		C22DA7E521CE358E00256576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7E421CE358E00256576 /* AppDelegate.swift */; };
+		C22DA7E721CE358E00256576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7E621CE358E00256576 /* ViewController.swift */; };
+		C22DA7EA21CE358E00256576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DA7E821CE358E00256576 /* Main.storyboard */; };
+		C22DA7EC21CE359000256576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22DA7EB21CE359000256576 /* Assets.xcassets */; };
+		C22DA7EF21CE359000256576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DA7ED21CE359000256576 /* LaunchScreen.storyboard */; };
+		C22DA7FB21CE35ED00256576 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7F421CE35EC00256576 /* Renderable.swift */; };
+		C22DA7FC21CE35ED00256576 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7F521CE35EC00256576 /* GameScene.swift */; };
+		C22DA7FD21CE35ED00256576 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7F621CE35EC00256576 /* Scene.swift */; };
+		C22DA7FE21CE35ED00256576 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7F721CE35ED00256576 /* Node.swift */; };
+		C22DA7FF21CE35ED00256576 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7F821CE35ED00256576 /* Renderer.swift */; };
+		C22DA80021CE35ED00256576 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7F921CE35ED00256576 /* Plane.swift */; };
+		C22DA80121CE35ED00256576 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7FA21CE35ED00256576 /* Shader.metal */; };
+		C22DA80521CE397500256576 /* Textureable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA80421CE397500256576 /* Textureable.swift */; };
+		C22DA80821CE3DF100256576 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = C22DA80721CE3DF100256576 /* picture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +124,22 @@
 		C22DA7D321C2A6BE00256576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C22DA7D621C2A6BE00256576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C22DA7D821C2A6BE00256576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C22DA7E221CE358E00256576 /* Metal_RenderImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metal_RenderImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22DA7E421CE358E00256576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C22DA7E621CE358E00256576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C22DA7E921CE358E00256576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C22DA7EB21CE359000256576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C22DA7EE21CE359000256576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C22DA7F021CE359000256576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C22DA7F421CE35EC00256576 /* Renderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		C22DA7F521CE35EC00256576 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C22DA7F621CE35EC00256576 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C22DA7F721CE35ED00256576 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		C22DA7F821CE35ED00256576 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		C22DA7F921CE35ED00256576 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		C22DA7FA21CE35ED00256576 /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		C22DA80421CE397500256576 /* Textureable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textureable.swift; sourceTree = "<group>"; };
+		C22DA80721CE3DF100256576 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +179,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C22DA7C621C2A6BD00256576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22DA7DF21CE358E00256576 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,6 +299,7 @@
 				849F9E6621C7CE10001F4D2D /* metal_two_triangle */,
 				849F9E8421C7D4D7001F4D2D /* Metal_animate */,
 				845F692C21CB986500BFD877 /* Metal_Colorful */,
+				C22DA7E321CE358E00256576 /* Metal_RenderImage */,
 				C22DA7CA21C2A6BD00256576 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -275,6 +313,7 @@
 				849F9E6521C7CE10001F4D2D /* metal_two_triangle.app */,
 				849F9E8321C7D4D7001F4D2D /* Metal_animate.app */,
 				845F692B21CB986500BFD877 /* Metal_Colorful.app */,
+				C22DA7E221CE358E00256576 /* Metal_RenderImage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,6 +329,52 @@
 				C22DA7D821C2A6BE00256576 /* Info.plist */,
 			);
 			path = Metal_Demos;
+			sourceTree = "<group>";
+		};
+		C22DA7E321CE358E00256576 /* Metal_RenderImage */ = {
+			isa = PBXGroup;
+			children = (
+				C22DA80321CE361900256576 /* Scene */,
+				C22DA80221CE35F800256576 /* Node */,
+				C22DA7F821CE35ED00256576 /* Renderer.swift */,
+				C22DA7FA21CE35ED00256576 /* Shader.metal */,
+				C22DA7E421CE358E00256576 /* AppDelegate.swift */,
+				C22DA7E621CE358E00256576 /* ViewController.swift */,
+				C22DA7E821CE358E00256576 /* Main.storyboard */,
+				C22DA80621CE3DE000256576 /* Images */,
+				C22DA7EB21CE359000256576 /* Assets.xcassets */,
+				C22DA7ED21CE359000256576 /* LaunchScreen.storyboard */,
+				C22DA7F021CE359000256576 /* Info.plist */,
+			);
+			path = Metal_RenderImage;
+			sourceTree = "<group>";
+		};
+		C22DA80221CE35F800256576 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				C22DA7F721CE35ED00256576 /* Node.swift */,
+				C22DA7F921CE35ED00256576 /* Plane.swift */,
+				C22DA7F421CE35EC00256576 /* Renderable.swift */,
+				C22DA80421CE397500256576 /* Textureable.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		C22DA80321CE361900256576 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C22DA7F521CE35EC00256576 /* GameScene.swift */,
+				C22DA7F621CE35EC00256576 /* Scene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		C22DA80621CE3DE000256576 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C22DA80721CE3DF100256576 /* picture.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,13 +482,30 @@
 			productReference = C22DA7C921C2A6BD00256576 /* Metal_Demos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C22DA7E121CE358E00256576 /* Metal_RenderImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C22DA7F321CE359000256576 /* Build configuration list for PBXNativeTarget "Metal_RenderImage" */;
+			buildPhases = (
+				C22DA7DE21CE358E00256576 /* Sources */,
+				C22DA7DF21CE358E00256576 /* Frameworks */,
+				C22DA7E021CE358E00256576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Metal_RenderImage;
+			productName = Metal_RenderImage;
+			productReference = C22DA7E221CE358E00256576 /* Metal_RenderImage.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C22DA7C121C2A6BD00256576 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "王伟奇";
 				TargetAttributes = {
@@ -423,6 +525,9 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					C22DA7C821C2A6BD00256576 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					C22DA7E121CE358E00256576 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -446,6 +551,7 @@
 				849F9E6421C7CE10001F4D2D /* metal_two_triangle */,
 				849F9E8221C7D4D7001F4D2D /* Metal_animate */,
 				845F692A21CB986500BFD877 /* Metal_Colorful */,
+				C22DA7E121CE358E00256576 /* Metal_RenderImage */,
 			);
 		};
 /* End PBXProject section */
@@ -508,6 +614,17 @@
 				C22DA7D721C2A6BE00256576 /* LaunchScreen.storyboard in Resources */,
 				C22DA7D421C2A6BE00256576 /* Assets.xcassets in Resources */,
 				C22DA7D221C2A6BD00256576 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22DA7E021CE358E00256576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22DA7EF21CE359000256576 /* LaunchScreen.storyboard in Resources */,
+				C22DA7EC21CE359000256576 /* Assets.xcassets in Resources */,
+				C22DA80821CE3DF100256576 /* picture.png in Resources */,
+				C22DA7EA21CE358E00256576 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +696,23 @@
 			files = (
 				C22DA7CF21C2A6BD00256576 /* ViewController.swift in Sources */,
 				C22DA7CD21C2A6BD00256576 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22DA7DE21CE358E00256576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22DA7FB21CE35ED00256576 /* Renderable.swift in Sources */,
+				C22DA7E721CE358E00256576 /* ViewController.swift in Sources */,
+				C22DA7FF21CE35ED00256576 /* Renderer.swift in Sources */,
+				C22DA80121CE35ED00256576 /* Shader.metal in Sources */,
+				C22DA7FD21CE35ED00256576 /* Scene.swift in Sources */,
+				C22DA80521CE397500256576 /* Textureable.swift in Sources */,
+				C22DA7FE21CE35ED00256576 /* Node.swift in Sources */,
+				C22DA7FC21CE35ED00256576 /* GameScene.swift in Sources */,
+				C22DA80021CE35ED00256576 /* Plane.swift in Sources */,
+				C22DA7E521CE358E00256576 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +811,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				C22DA7D621C2A6BE00256576 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C22DA7E821CE358E00256576 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C22DA7E921CE358E00256576 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C22DA7ED21CE359000256576 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C22DA7EE21CE359000256576 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1029,6 +1179,42 @@
 			};
 			name = Release;
 		};
+		C22DA7F121CE359000256576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TX76W4CSD;
+				INFOPLIST_FILE = Metal_RenderImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C22DA7F221CE359000256576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TX76W4CSD;
+				INFOPLIST_FILE = Metal_RenderImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1091,6 +1277,15 @@
 			buildConfigurations = (
 				C22DA7DC21C2A6BE00256576 /* Debug */,
 				C22DA7DD21C2A6BE00256576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C22DA7F321CE359000256576 /* Build configuration list for PBXNativeTarget "Metal_RenderImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22DA7F121CE359000256576 /* Debug */,
+				C22DA7F221CE359000256576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

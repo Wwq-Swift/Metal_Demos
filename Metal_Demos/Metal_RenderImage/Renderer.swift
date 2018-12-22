@@ -25,44 +25,6 @@ class Renderer: NSObject {
         super.init()
 //        buildPipelineState()
     }
-    
-//    /// 构件管道状态    (被抽取进行封装)
-//    private func buildPipelineState() {
-//        //   存储GPU 的事件
-//        let libary = device.makeDefaultLibrary()
-//        /// 调用metal 中处理顶点的方法
-//        let vertextFuncion = libary?.makeFunction(name: "vertex_shader")
-//        // 调用metal 中上色的方法
-//        let fragmentFuncion = libary?.makeFunction(name: "fragment_shader")
-//
-//        let pipelineDescriptor = MTLRenderPipelineDescriptor()
-//        /// 使用 metal 中的方法
-//        pipelineDescriptor.vertexFunction = vertextFuncion
-//        pipelineDescriptor.fragmentFunction = fragmentFuncion
-//        pipelineDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
-//
-//        /// 顶点描述
-//        let vertexDescriptor = MTLVertexDescriptor()
-//        /// 位置
-//        vertexDescriptor.attributes[0].format = .float3
-//        vertexDescriptor.attributes[0].offset = 0
-//        vertexDescriptor.attributes[0].bufferIndex = 0
-//        /// 颜色
-//        vertexDescriptor.attributes[1].format = .float4
-//        vertexDescriptor.attributes[1].offset = MemoryLayout<float3>.stride
-//        vertexDescriptor.attributes[1].bufferIndex = 0
-//
-//        vertexDescriptor.layouts[0].stride = MemoryLayout<Vertex>.stride
-//        pipelineDescriptor.vertexDescriptor = vertexDescriptor
-//
-//
-//        do {
-//            ///画出三个顶点
-//            pipelineState = try device.makeRenderPipelineState(descriptor: pipelineDescriptor)
-//        } catch let error as NSError {
-//            print("error: \(error.localizedDescription)")
-//        }
-//    }
 }
 
 extension Renderer: MTKViewDelegate {
