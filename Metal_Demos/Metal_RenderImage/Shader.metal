@@ -45,10 +45,13 @@ fragment half4 fragment_shader(VertexOut vertexIn [[ stage_in ]]) {
 }
 /// 纹理处理
 fragment half4 textured_fragment(VertexOut vertexIn [[ stage_in ]],
-                                 texture2d<float> texture [[texture(0)]]) {
+                                 texture2d<float> texture [[texture(0)]],
+                                 sampler sampler2d [[sampler(0)]]) {
     
     constexpr sampler defaultSampler;
-    float4 color = texture.sample(defaultSampler, vertexIn.textureCoordinates);
+//    float4 color = texture.sample(defaultSampler, vertexIn.textureCoordinates);
+    /// 设置我们自定义的采样器
+    float4 color = texture.sample(sampler2d, vertexIn.textureCoordinates);
     return half4(color.r, color.g, color.b, 1);
     
 }

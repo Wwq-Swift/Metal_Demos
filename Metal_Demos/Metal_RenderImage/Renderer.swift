@@ -19,11 +19,25 @@ class Renderer: NSObject {
    //  场景
     var scene: Scene?
     
+    /// 采样状态。  可以设置为线性的，图片的 网格就被虚化了
+    private var samplerState: MTLSamplerState?
+    
     init(device: MTLDevice) {
         self.device = device
         commandQueue = device.makeCommandQueue()
         super.init()
 //        buildPipelineState()
+        buildSamplerState()
+    }
+    
+    private func buildSamplerState() {
+        /// 采样器描述符
+        let descriptor = MTLSamplerDescriptor()
+        /// 遇到拉伸做线性处理
+        descriptor.minFilter = .linear
+        /// 遇到压缩时候也做线性处理
+        descriptor.magFilter = .linear
+        samplerState = device.makeSamplerState(descriptor: descriptor)
     }
 }
 
@@ -44,7 +58,8 @@ extension Renderer: MTKViewDelegate {
         let commandEncoderer = commandBuffer.makeRenderCommandEncoder(descriptor: descriptor)
         guard let commandEncoder = commandEncoderer else { return }
 //        commandEncoder.setRenderPipelineState(pipelineState)
-        
+        /// 让cpu 采用这个采样器进行处理
+        commandEncoder.setFragmentSamplerState(samplerState, index: 0)
         let deltaTime = 1 / Float(view.preferredFramesPerSecond)
         scene?.render(commandEnder: commandEncoder,
                       deltaTime: deltaTime)
