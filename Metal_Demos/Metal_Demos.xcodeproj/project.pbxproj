@@ -46,6 +46,24 @@
 		849F9E9021C7D4D8001F4D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F9E8E21C7D4D8001F4D2D /* LaunchScreen.storyboard */; };
 		849F9E9621C7D566001F4D2D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F9E9521C7D566001F4D2D /* Renderer.swift */; };
 		849F9E9821C7D57B001F4D2D /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 849F9E9721C7D57B001F4D2D /* Shader.metal */; };
+		C209AAC121CFB21B00453527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AAC021CFB21B00453527 /* AppDelegate.swift */; };
+		C209AAC321CFB21B00453527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AAC221CFB21B00453527 /* ViewController.swift */; };
+		C209AAC621CFB21B00453527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C209AAC421CFB21B00453527 /* Main.storyboard */; };
+		C209AAC821CFB21B00453527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C209AAC721CFB21B00453527 /* Assets.xcassets */; };
+		C209AACB21CFB21B00453527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C209AAC921CFB21B00453527 /* LaunchScreen.storyboard */; };
+		C209AADE21CFB5BB00453527 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AAD121CFB5BB00453527 /* Scene.swift */; };
+		C209AADF21CFB5BB00453527 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AAD221CFB5BB00453527 /* GameScene.swift */; };
+		C209AAE021CFB5BB00453527 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = C209AAD321CFB5BB00453527 /* Shader.metal */; };
+		C209AAE121CFB5BB00453527 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AAD421CFB5BB00453527 /* Renderer.swift */; };
+		C209AAE221CFB5BB00453527 /* picture-frame-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = C209AAD621CFB5BB00453527 /* picture-frame-mask.png */; };
+		C209AAE321CFB5BB00453527 /* picture-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = C209AAD721CFB5BB00453527 /* picture-frame.png */; };
+		C209AAE421CFB5BB00453527 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = C209AAD821CFB5BB00453527 /* picture.png */; };
+		C209AAE521CFB5BB00453527 /* Textureable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AADA21CFB5BB00453527 /* Textureable.swift */; };
+		C209AAE621CFB5BB00453527 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AADB21CFB5BB00453527 /* Renderable.swift */; };
+		C209AAE721CFB5BB00453527 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AADC21CFB5BB00453527 /* Plane.swift */; };
+		C209AAE821CFB5BB00453527 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AADD21CFB5BB00453527 /* Node.swift */; };
+		C209AAEA21CFB62000453527 /* StructModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AAE921CFB62000453527 /* StructModel.swift */; };
+		C209AAEC21CFB6EA00453527 /* MatrixMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209AAEB21CFB6EA00453527 /* MatrixMath.swift */; };
 		C22DA7CD21C2A6BD00256576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7CC21C2A6BD00256576 /* AppDelegate.swift */; };
 		C22DA7CF21C2A6BD00256576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7CE21C2A6BD00256576 /* ViewController.swift */; };
 		C22DA7D221C2A6BD00256576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DA7D021C2A6BD00256576 /* Main.storyboard */; };
@@ -133,6 +151,26 @@
 		849F9E9121C7D4D8001F4D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849F9E9521C7D566001F4D2D /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		849F9E9721C7D57B001F4D2D /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		C209AABE21CFB21B00453527 /* Metal_2D~3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metal_2D~3D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C209AAC021CFB21B00453527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C209AAC221CFB21B00453527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C209AAC521CFB21B00453527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C209AAC721CFB21B00453527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C209AACA21CFB21B00453527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C209AACC21CFB21B00453527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C209AAD121CFB5BB00453527 /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C209AAD221CFB5BB00453527 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C209AAD321CFB5BB00453527 /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		C209AAD421CFB5BB00453527 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		C209AAD621CFB5BB00453527 /* picture-frame-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picture-frame-mask.png"; sourceTree = "<group>"; };
+		C209AAD721CFB5BB00453527 /* picture-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picture-frame.png"; sourceTree = "<group>"; };
+		C209AAD821CFB5BB00453527 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
+		C209AADA21CFB5BB00453527 /* Textureable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Textureable.swift; sourceTree = "<group>"; };
+		C209AADB21CFB5BB00453527 /* Renderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		C209AADC21CFB5BB00453527 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		C209AADD21CFB5BB00453527 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		C209AAE921CFB62000453527 /* StructModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructModel.swift; sourceTree = "<group>"; };
+		C209AAEB21CFB6EA00453527 /* MatrixMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMath.swift; sourceTree = "<group>"; };
 		C22DA7C921C2A6BD00256576 /* Metal_Demos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metal_Demos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22DA7CC21C2A6BD00256576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C22DA7CE21C2A6BD00256576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +244,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		849F9E8021C7D4D7001F4D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C209AABB21CFB21B00453527 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,6 +376,56 @@
 			path = Metal_animate;
 			sourceTree = "<group>";
 		};
+		C209AABF21CFB21B00453527 /* Metal_2D~3D */ = {
+			isa = PBXGroup;
+			children = (
+				C209AAC021CFB21B00453527 /* AppDelegate.swift */,
+				C209AAC221CFB21B00453527 /* ViewController.swift */,
+				C209AAE921CFB62000453527 /* StructModel.swift */,
+				C209AAD421CFB5BB00453527 /* Renderer.swift */,
+				C209AAEB21CFB6EA00453527 /* MatrixMath.swift */,
+				C209AAD521CFB5BB00453527 /* Images */,
+				C209AAD921CFB5BB00453527 /* Node */,
+				C209AAD021CFB5BB00453527 /* Scene */,
+				C209AAD321CFB5BB00453527 /* Shader.metal */,
+				C209AAC421CFB21B00453527 /* Main.storyboard */,
+				C209AAC721CFB21B00453527 /* Assets.xcassets */,
+				C209AAC921CFB21B00453527 /* LaunchScreen.storyboard */,
+				C209AACC21CFB21B00453527 /* Info.plist */,
+			);
+			path = "Metal_2D~3D";
+			sourceTree = "<group>";
+		};
+		C209AAD021CFB5BB00453527 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				C209AAD121CFB5BB00453527 /* Scene.swift */,
+				C209AAD221CFB5BB00453527 /* GameScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		C209AAD521CFB5BB00453527 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C209AAD621CFB5BB00453527 /* picture-frame-mask.png */,
+				C209AAD721CFB5BB00453527 /* picture-frame.png */,
+				C209AAD821CFB5BB00453527 /* picture.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C209AAD921CFB5BB00453527 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				C209AADA21CFB5BB00453527 /* Textureable.swift */,
+				C209AADB21CFB5BB00453527 /* Renderable.swift */,
+				C209AADC21CFB5BB00453527 /* Plane.swift */,
+				C209AADD21CFB5BB00453527 /* Node.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
 		C22DA7C021C2A6BD00256576 = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +437,7 @@
 				845F692C21CB986500BFD877 /* Metal_Colorful */,
 				C22DA7E321CE358E00256576 /* Metal_RenderImage */,
 				C2FA9BE321CEABDE006D5EA9 /* Metal_Mask */,
+				C209AABF21CFB21B00453527 /* Metal_2D~3D */,
 				C22DA7CA21C2A6BD00256576 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -357,6 +453,7 @@
 				845F692B21CB986500BFD877 /* Metal_Colorful.app */,
 				C22DA7E221CE358E00256576 /* Metal_RenderImage.app */,
 				C2FA9BE221CEABDE006D5EA9 /* Metal_Mask.app */,
+				C209AABE21CFB21B00453527 /* Metal_2D~3D.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -556,6 +653,23 @@
 			productReference = 849F9E8321C7D4D7001F4D2D /* Metal_animate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C209AABD21CFB21B00453527 /* Metal_2D~3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C209AACF21CFB21B00453527 /* Build configuration list for PBXNativeTarget "Metal_2D~3D" */;
+			buildPhases = (
+				C209AABA21CFB21B00453527 /* Sources */,
+				C209AABB21CFB21B00453527 /* Frameworks */,
+				C209AABC21CFB21B00453527 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Metal_2D~3D";
+			productName = "Metal_2D~3D";
+			productReference = C209AABE21CFB21B00453527 /* Metal_2D~3D.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C22DA7C821C2A6BD00256576 /* Metal_Demos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C22DA7DB21C2A6BE00256576 /* Build configuration list for PBXNativeTarget "Metal_Demos" */;
@@ -632,6 +746,9 @@
 					849F9E8221C7D4D7001F4D2D = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					C209AABD21CFB21B00453527 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					C22DA7C821C2A6BD00256576 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -664,6 +781,7 @@
 				845F692A21CB986500BFD877 /* Metal_Colorful */,
 				C22DA7E121CE358E00256576 /* Metal_RenderImage */,
 				C2FA9BE121CEABDE006D5EA9 /* Metal_Mask */,
+				C209AABD21CFB21B00453527 /* Metal_2D~3D */,
 			);
 		};
 /* End PBXProject section */
@@ -716,6 +834,19 @@
 				849F9E9021C7D4D8001F4D2D /* LaunchScreen.storyboard in Resources */,
 				849F9E8D21C7D4D8001F4D2D /* Assets.xcassets in Resources */,
 				849F9E8B21C7D4D7001F4D2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C209AABC21CFB21B00453527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C209AACB21CFB21B00453527 /* LaunchScreen.storyboard in Resources */,
+				C209AAE321CFB5BB00453527 /* picture-frame.png in Resources */,
+				C209AAE421CFB5BB00453527 /* picture.png in Resources */,
+				C209AAC821CFB21B00453527 /* Assets.xcassets in Resources */,
+				C209AAE221CFB5BB00453527 /* picture-frame-mask.png in Resources */,
+				C209AAC621CFB21B00453527 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,6 +943,25 @@
 				849F9E8821C7D4D7001F4D2D /* ViewController.swift in Sources */,
 				849F9E9621C7D566001F4D2D /* Renderer.swift in Sources */,
 				849F9E8621C7D4D7001F4D2D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C209AABA21CFB21B00453527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C209AAC321CFB21B00453527 /* ViewController.swift in Sources */,
+				C209AAE821CFB5BB00453527 /* Node.swift in Sources */,
+				C209AAEA21CFB62000453527 /* StructModel.swift in Sources */,
+				C209AAE721CFB5BB00453527 /* Plane.swift in Sources */,
+				C209AAC121CFB21B00453527 /* AppDelegate.swift in Sources */,
+				C209AADF21CFB5BB00453527 /* GameScene.swift in Sources */,
+				C209AAEC21CFB6EA00453527 /* MatrixMath.swift in Sources */,
+				C209AAE021CFB5BB00453527 /* Shader.metal in Sources */,
+				C209AAE121CFB5BB00453527 /* Renderer.swift in Sources */,
+				C209AADE21CFB5BB00453527 /* Scene.swift in Sources */,
+				C209AAE521CFB5BB00453527 /* Textureable.swift in Sources */,
+				C209AAE621CFB5BB00453527 /* Renderable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +1087,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				849F9E8F21C7D4D8001F4D2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C209AAC421CFB21B00453527 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C209AAC521CFB21B00453527 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C209AAC921CFB21B00453527 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C209AACA21CFB21B00453527 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1172,6 +1338,42 @@
 				DEVELOPMENT_TEAM = 3TX76W4CSD;
 				INFOPLIST_FILE = Metal_animate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C209AACD21CFB21B00453527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TX76W4CSD;
+				INFOPLIST_FILE = "Metal_2D~3D/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C209AACE21CFB21B00453527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TX76W4CSD;
+				INFOPLIST_FILE = "Metal_2D~3D/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1453,6 +1655,15 @@
 			buildConfigurations = (
 				849F9E9321C7D4D8001F4D2D /* Debug */,
 				849F9E9421C7D4D8001F4D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C209AACF21CFB21B00453527 /* Build configuration list for PBXNativeTarget "Metal_2D~3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C209AACD21CFB21B00453527 /* Debug */,
+				C209AACE21CFB21B00453527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
