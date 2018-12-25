@@ -21,6 +21,8 @@ class Renderer: NSObject {
     
     /// 采样状态。  可以设置为线性的，图片的 网格就被虚化了
     private var samplerState: MTLSamplerState?
+    // 深度状态
+    private var depthStencilState: MTLDepthStencilState?
     
     init(device: MTLDevice) {
         self.device = device
@@ -28,6 +30,7 @@ class Renderer: NSObject {
         super.init()
 //        buildPipelineState()
         buildSamplerState()
+        buildDepthStencilState()
     }
     
     private func buildSamplerState() {
@@ -38,6 +41,16 @@ class Renderer: NSObject {
         /// 遇到压缩时候也做线性处理
         descriptor.magFilter = .linear
         samplerState = device.makeSamplerState(descriptor: descriptor)
+    }
+    
+    /// 用于处理深度状态
+    private func buildDepthStencilState(){
+        
+        let depthStencilDescriptor = MTLDepthStencilDescriptor()
+        depthStencilDescriptor.depthCompareFunction = .less
+        depthStencilDescriptor.isDepthWriteEnabled = true
+        depthStencilState = device.makeDepthStencilState(descriptor: depthStencilDescriptor)
+        
     }
 }
 
@@ -60,6 +73,8 @@ extension Renderer: MTKViewDelegate {
 //        commandEncoder.setRenderPipelineState(pipelineState)
         /// 让cpu 采用这个采样器进行处理
         commandEncoder.setFragmentSamplerState(samplerState, index: 0)
+        /// 让GPU 采用这个深度处理器
+        commandEncoder.setDepthStencilState(depthStencilState)
         let deltaTime = 1 / Float(view.preferredFramesPerSecond)
         scene?.render(commandEncoder: commandEncoder,
                       deltaTime: deltaTime)

@@ -36,8 +36,9 @@ extension Renderable {
         pipelineDescriptor.fragmentFunction = fragmentFuncion
         pipelineDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
         pipelineDescriptor.vertexDescriptor = vertexDescriptor
-        /// 增加深度 的概念
-//        pipelineDescriptor.depthAttachmentPixelFormat = .depth32Float
+        
+        /// 增加深度 的概念。/// XCOde 9 之后一定要写对应的单位，否则直接d闪退
+        pipelineDescriptor.depthAttachmentPixelFormat = .depth32Float
         
         let pipelineState: MTLRenderPipelineState
         do {

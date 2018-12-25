@@ -57,8 +57,7 @@ fragment half4 textured_fragment(VertexOut vertexIn [[ stage_in ]],
 //    float4 color = texture.sample(defaultSampler, vertexIn.textureCoordinates);
     /// 设置我们自定义的采样器
     float4 color = texture.sample(sampler2d, vertexIn.textureCoordinates);
-    if (
-        color.a == 0) {
+    if (color.a == 0) {
         discard_fragment();
     }
     return half4(color.r, color.g, color.b, 1);

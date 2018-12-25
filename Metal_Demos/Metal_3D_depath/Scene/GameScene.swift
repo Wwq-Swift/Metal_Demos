@@ -22,7 +22,7 @@ class GameScene: Scene {
         addChildNode(quad)
         addChildNode(cube)
         
-        quad.position.z = 0.5
+        quad.position.z = -1.0
         quad.position.y = -0.5
     }
     

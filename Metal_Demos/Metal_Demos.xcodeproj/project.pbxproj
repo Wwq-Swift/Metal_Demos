@@ -103,6 +103,9 @@
 		C22DA80121CE35ED00256576 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = C22DA7FA21CE35ED00256576 /* Shader.metal */; };
 		C22DA80521CE397500256576 /* Textureable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA80421CE397500256576 /* Textureable.swift */; };
 		C22DA80821CE3DF100256576 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = C22DA80721CE3DF100256576 /* picture.png */; };
+		C28EC33721D27CE500B5BEBB /* picture-frame-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA9C0B21CEB0E7006D5EA9 /* picture-frame-mask.png */; };
+		C28EC33821D27CEA00B5BEBB /* picture-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA9C0721CEADF1006D5EA9 /* picture-frame.png */; };
+		C28EC33921D27CEE00B5BEBB /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA9C0521CEAC5D006D5EA9 /* picture.png */; };
 		C2FA9BE521CEABDE006D5EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA9BE421CEABDE006D5EA9 /* AppDelegate.swift */; };
 		C2FA9BE721CEABDE006D5EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA9BE621CEABDE006D5EA9 /* ViewController.swift */; };
 		C2FA9BEA21CEABDE006D5EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FA9BE821CEABDE006D5EA9 /* Main.storyboard */; };
@@ -115,10 +118,7 @@
 		C2FA9C0121CEAC4C006D5EA9 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA9BFA21CEAC4C006D5EA9 /* Renderable.swift */; };
 		C2FA9C0221CEAC4C006D5EA9 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA9BFB21CEAC4C006D5EA9 /* Plane.swift */; };
 		C2FA9C0321CEAC4C006D5EA9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA9BFC21CEAC4C006D5EA9 /* Node.swift */; };
-		C2FA9C0621CEAC5D006D5EA9 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA9C0521CEAC5D006D5EA9 /* picture.png */; };
-		C2FA9C0821CEADF1006D5EA9 /* picture-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA9C0721CEADF1006D5EA9 /* picture-frame.png */; };
 		C2FA9C0A21CEAFFC006D5EA9 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA9C0921CEAFFC006D5EA9 /* Renderer.swift */; };
-		C2FA9C0C21CEB0E7006D5EA9 /* picture-frame-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FA9C0B21CEB0E7006D5EA9 /* picture-frame-mask.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1013,10 +1013,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FA9BEF21CEABDE006D5EA9 /* LaunchScreen.storyboard in Resources */,
-				C2FA9C0821CEADF1006D5EA9 /* picture-frame.png in Resources */,
 				C2FA9BEC21CEABDE006D5EA9 /* Assets.xcassets in Resources */,
-				C2FA9C0621CEAC5D006D5EA9 /* picture.png in Resources */,
-				C2FA9C0C21CEB0E7006D5EA9 /* picture-frame-mask.png in Resources */,
+				C28EC33921D27CEE00B5BEBB /* picture.png in Resources */,
+				C28EC33821D27CEA00B5BEBB /* picture-frame.png in Resources */,
+				C28EC33721D27CE500B5BEBB /* picture-frame-mask.png in Resources */,
 				C2FA9BEA21CEABDE006D5EA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1344,7 +1344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1363,7 +1363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1377,7 +1377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TX76W4CSD;
 				INFOPLIST_FILE = Metal_Colorful/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1397,7 +1397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TX76W4CSD;
 				INFOPLIST_FILE = Metal_Colorful/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1421,7 +1421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.Metal-Render--";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1440,7 +1440,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.Metal-Render--";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1572,7 +1572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1590,7 +1590,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1725,7 +1725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TextApp.Metal-Demos";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1744,7 +1744,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TextApp.Metal-Demos";
+				PRODUCT_BUNDLE_IDENTIFIER = "jj.metal-triangle-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
