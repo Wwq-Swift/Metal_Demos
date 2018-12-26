@@ -27,7 +27,7 @@ class Scene: Node {
     private func buildCamera() {
         camera.aspect = Float(size.width / size.height)
         camera.position.z = -6
-        addChildNode(camera)
+//        addChildNode(camera)
     }
     
     /// 更新场景状态
@@ -38,6 +38,8 @@ class Scene: Node {
         update(deltaTime: deltaTime)
         sceneConstants.projectionMatris = camera.projectionMatrix
         let viewMatrix = matrix_float4x4(translationX: 0, y: 0 , z: -4)
+//        commandEncoder.setVertexBytes(&sceneConstants,
+//                                      length: MemoryLayout<SceneConstants>.stride, at: 2)
         for child in children {
             child.render(commandEncoder: commandEncoder, partentModelViewMatrix: camera.viewMartrix) // 对视角中的所有矩阵进行渲染
         }
